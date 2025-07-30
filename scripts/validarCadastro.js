@@ -205,7 +205,7 @@ inputsObj.forEach((input) => {
 })
 
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
     let formularioValido = true;
@@ -222,14 +222,33 @@ form.addEventListener("submit", (e) => {
             if (input.tipo != "confirmar-senha") dados[input.tipo] = input.element.value
         })
 
-        fetch('http://localhost:3333/cadastra_usuario', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(dados)
-        })
-            .then((res) => window.location.href = "/login.html")
-            .catch((error) => console.log(error))
+        try {
+            const res = await fetch('http://127.0.0.1:3333/cadastra_usuario', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dados)
+            })
+
+            const json = await res.json()
+
+            if (res.status === 201) window.location.href = "/login.html"
+            else if (res.status === 400) alert("Email ja cadastrado!")
+        } catch (error) {
+            console.error(error)
+        }
+
+        // fetch('http://127.0.0.1:3333/cadastra_usuario', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(dados)
+        // })
+        //     .then((res) => {
+                
+        //     }
+        //     .catch((error) => console.log(error))
     }
 });

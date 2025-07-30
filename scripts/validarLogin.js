@@ -113,7 +113,7 @@ form.addEventListener("submit", async (e) => {
                 dados[input.tipo] = input.element.value
             })
 
-            const res = await fetch('http://localhost:3333/autenticacaoUsuario', {
+            const res = await fetch('http://127.0.0.1:3333/autenticacaoUsuario', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
