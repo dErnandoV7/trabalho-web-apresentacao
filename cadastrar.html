@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="scripts/validarCadastro.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Crie sua conta</h1>
+        <form method="post" id="form">
+            <div class="campo-duplo">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <p class="erro-hidden msg-erro-nome erro">Deve ter pelo menos 2 caracteres</p>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email">
+                    <p class="erro-hidden msg-erro-email erro">Email deve terminar com dominio válido</p>
+                </div>
+            </div>
+
+            <div class="campo-duplo">
+                <div class="campo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                    <p class="erro-hidden msg-erro-senha erro">Sua senha deve ter pelo menos 1 número e 1 caracter
+                        especial</p>
+                </div>
+                <div class="campo">
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Digite sua senha novamente">
+                    <p class="erro-hidden msg-erro-confirmar-senha erro">As senhas devem ser iguais</p>
+                </div>
+            </div>
+            <div class="campo">
+                <label for="cpf">CPF:</label>
+                <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                <p class="erro-hidden msg-erro-cpf erro">CPF inválido</p>
+            </div>
+            <div class="campo-duplo">
+                <div class="campo">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+                    <p class="erro-hidden msg-erro-cidade erro">Deve ter pelo menos 2 caracteres</p>
+                </div>
+
+                <div class="campo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço">
+                    <p class="erro-hidden msg-erro-endereco erro">Deve ter pelo menos 4 caracteres</p>
+                </div>
+            </div>
+
+            <div class="cadastrar-btn">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="scripts/carrinho.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>
+                <a href="/">Programação Web - Trabalho</a>
+            </h2>
+        </div>
+        <div class="main-container">
+            <div>
+                <h1>Seja bem vindo ao seu <strong>Carrinho</strong></h1>
+                <input class="btn-finalizar-compra" type="button" value="Finalizar a compra">
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><i class="fa-solid fa-image"></i></th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tr class="registro-produto">
+                        <td>
+                            <img src="images/calcas/calca_1_2.png" alt="">
+                        </td>
+                        <td>Calça Mizuno Básica Masculina - Preto</td>
+                        <td>Confeccionada em material leve e aconchegante, a peça apresenta bolsos laterais com que
+                            guardam pequenos objetos.</td>
+                        <td><input type="number" value="3"></td>
+                    </tr>
+                    <tr class="registro-produto">
+                        <td>
+                            <img src="images/calcas/calca_2_1.png" alt="">
+                        </td>
+                        <td>Calça jeans Masculina Skinny Délavé Street</td>
+                        <td>Calça jeans Masculina Skinny Délavé Street Azul Claro Com muita versatilidade, essa calça
+                            pode ser usada em qualquer ocasião</td>
+                        <td><input type="number" value="3"></td>
+                    </tr>
+                    <tr class="registro-produto">
+                        <td>
+                            <img src="images/sapatos/sapato_1_1.png" alt="">
+                        </td>
+                        <td>Tênis Nike Air Max Plus Masculino</td>
+                        <td>O Nike Air Max Plus proporciona uma experiência Nike Air ajustada que oferece estabilidade
+                            premium e amortecimento inacreditável</td>
+                        <td><input type="number" value="3"></td>
+                    </tr>
+                    <tr class="registro-produto">
+                        <td>
+                            <img src="images/smartphones/smartphone_1_1.png" alt="">
+                        </td>
+                        <td>Apple iPhone 16 Pro (256 GB) – Titânio preto</td>
+                        <td>O iPhone 16 Pro tem uma estrutura leve e robusta em titânio, uma tela Super Retina XDR
+                            maior, de 6,3 polegadas.
+                        </td>
+                        <td><input type="number" value="3"></td>
+                    </tr>
+                    <tr class="registro-produto">
+                        <td>
+                            <img src="images/relogios/relogio_1_2.png" alt="">
+                        </td>
+                        <td>Relógio Citizen Masculino</td>
+                        <td>Conteúdo da embalagem: 1 relógio, manual, certificado de garantia e nota fiscal.
+                            Fornecedor: Magnum Indústria da Amazônia</td>
+                        <td><input type="number" value="3"></td>
+                    </tr>
+                </table>
+                <button class="confirmar-edit">Confirmar Edições</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
