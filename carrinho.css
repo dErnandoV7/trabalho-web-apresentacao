@@ -1,9 +1,8 @@
 .main-container>div:not(:first-child) {
-    background: #fff;
+    background: transparent;
     width: 90%;
     margin: auto;
     max-width: 1200px;
-    box-shadow: 0px -2px 12px 1px #20202015;
 
 }
 
@@ -39,6 +38,9 @@
 table {
     margin: auto;
     width: 100%;
+    background: #fff;
+    box-shadow: 0px -2px 12px 1px #20202015;
+
 }
 
 table,
@@ -99,6 +101,7 @@ td input {
 .confirmar-edit:hover {
     background: blue;
 }
+
 @media (max-width: 750px) {
     .main-container h1 {
         font-size: 20px;
